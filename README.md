@@ -4,7 +4,7 @@ This project implements a **real-time anomaly detection system** for financial t
 
 ---
 
-## ?? Tech Stack
+## Tech Stack
 - **Producer:** Python + `kafka-python` (Redpanda-compatible)
 - **Streaming Platform:** [Redpanda](https://redpanda.com/) (Kafka-compatible)
 - **Anomaly Detection:** Python, [PyOD](https://github.com/yzhao062/pyod), Isolation Forest
@@ -13,7 +13,7 @@ This project implements a **real-time anomaly detection system** for financial t
 
 ---
 
-## ?? Project Structure
+##  Project Structure
 ```
 RealTime-Anomaly-Detection/
 ??? producer/              # Kafka producer script
@@ -26,7 +26,7 @@ RealTime-Anomaly-Detection/
 
 ---
 
-## ?? Setup Instructions (for macOS / Windows with WSL)
+##  Setup Instructions (for macOS / Windows with WSL)
 
 ### 1. Clone the repository
 ```bash
@@ -60,7 +60,7 @@ rpk topic create transactions --brokers localhost:9092
 
 ---
 
-## ?? Running the Application
+##  Running the Application
 
 ### A. Start the Kafka Producer (generates transaction data)
 ```bash
@@ -82,7 +82,7 @@ Then open your browser at: [http://localhost:8501](http://localhost:8501)
 
 ---
 
-## ?? Verifying PostgreSQL Data
+##  Verifying PostgreSQL Data
 You can check the `frauds` table manually:
 ```bash
 docker exec -it realtime-anomaly-detection-postgres-1 psql -U user -d anomalies
@@ -94,7 +94,7 @@ SELECT * FROM frauds;
 
 ---
 
-## ?? Python Dependencies (requirements.txt)
+##  Python Dependencies (requirements.txt)
 ```
 kafka-python
 pyod
@@ -108,14 +108,14 @@ streamlit-autorefresh
 
 ---
 
-## ? Expected Output
+##  Expected Output
 - Transactions being printed in terminal via producer
 - Detected anomalies logged via detector
 - Real-time dashboard showing anomaly table and bar chart of amounts by location
 
 ---
 
-## ?? Notes
+##  Notes
 - Works on macOS and Windows (with WSL)
 - Tested with Python 3.10+
 - Make sure Docker Desktop is running
