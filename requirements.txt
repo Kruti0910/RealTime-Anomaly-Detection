@@ -1,0 +1,6 @@
+kafka-python
+pyod
+pandas
+numpy
+psycopg2
+streamlit
