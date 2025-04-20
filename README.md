@@ -13,17 +13,9 @@ This project implements a **real-time anomaly detection system** for financial t
 
 ---
 
-## ?? Project Structure
+## Project Structure
 
-```bash
-RealTime-Anomaly-Detection/
-??? producer/              # Kafka producer script
-??? detector/              # PyOD anomaly detection script
-??? dashboard/             # Streamlit dashboard
-??? docker-compose.yml     # Redpanda and PostgreSQL setup
-??? requirements.txt       # Python dependencies
-??? README.md
-
+RealTime-Anomaly-Detection/ ├── producer/ # Kafka producer script ├── detector/ # PyOD anomaly detection script ├── dashboard/ # Streamlit dashboard ├── docker-compose.yml # Redpanda and PostgreSQL setup ├── requirements.txt # Python dependencies └── README.md
 
 ---
 
